@@ -199,23 +199,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="topic-modeling" class="level1">
 <h1>Topic modeling</h1>
-<p>We are going to look at data from the <a href="http://qwone.com/~jason/20Newsgroups/">20 Newsgroups</a> dataset. These are postings to newsgroups in 20 different categories.</p>
-<p>Scikit-learn has a function for downloading the data. See: https://scikit-learn.org/stable/modules/generated/sklearn.datasets.fetch_20newsgroups.html</p>
-<section id="lda" class="level2">
-<h2 class="anchored" data-anchor-id="lda">LDA</h2>
-<p>Latent Dirichlet Allocation: a topic model that generates topics based on a set of documents’ word frequencies.</p>
-<ul>
-<li>Get a “dictionary” that has IDs for all the words along with a record of their word frequencies.</li>
-<li>Use our “bag of words” to generate a list for each document containing its words and their frequencies</li>
-<li>Use gensim to generate an LDA model</li>
-</ul>
-</section>
-<section id="gensim" class="level2">
-<h2 class="anchored" data-anchor-id="gensim">Gensim</h2>
-<ul>
-<li>“Gensim is an open-source library for unsupervised topic modeling and natural language processing, using modern statistical machine learning.”</li>
-<li><a href="https://radimrehurek.com/gensim/">gensim website</a></li>
-</ul>
+<p>We are going to look at data from the CORGIS Dataset page. Particularly the “music” dataset to analyze pertinent factors relating to music and its popularity.</p>
 <div id="011b5d42-d37e-4e71-ab13-d99e91048d41" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.datasets <span class="im">import</span> fetch_20newsgroups</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -1112,7 +1096,6 @@ warranti 1</code></pre>
 </div>
 </div>
 </div>
-</section>
 </section>
 <section id="tf-idf-term-frequency-inverse-document-frequency" class="level1">
 <h1>TF-IDF (Term Frequency Inverse Document Frequency)</h1>
