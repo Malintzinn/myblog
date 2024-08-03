@@ -1,9 +1,9 @@
 ---
 title: "Introduction:"
 author: "Malintzin Blanco"
-date: "2024-07-30"
+date: "2024-08-02"
 categories: [music, code, analysis]
-image: "image.jpg"
+image: "Spotify_logo_with_text.svg.png"
 ---
 
 
