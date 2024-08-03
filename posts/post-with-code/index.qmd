@@ -1,9 +1,9 @@
 ---
-title: "Post With Code"
-author: "Harlow Malloc"
+title: "Introduction:"
+author: "Malintzin Blanco"
 date: "2024-07-30"
-categories: [news, code, analysis]
+categories: [music, code, analysis]
 image: "image.jpg"
 ---
 
-This is a post with executable code.
+
