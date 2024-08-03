@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>myblog – My Blog</title>
+<title>Spotify Audio Feature Analysis: – My Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +23,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,77 +66,19 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">My Blog</span>
     </a>
   </div>
@@ -149,7 +89,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -158,15 +98,15 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-posts">    
         <li>
-    <a class="dropdown-item" href="./posts/welcome.qmd">
+    <a class="dropdown-item" href="../posts/welcome.qmd">
  <span class="dropdown-text">Welcome</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./posts/post-with-code.qmd">
+    <a class="dropdown-item" href="../posts/post-with-code.qmd">
  <span class="dropdown-text">Post with Code</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./posts/project.ipynb">
+    <a class="dropdown-item" href="../posts/project.ipynb">
  <span class="dropdown-text">Project Notebook</span></a>
   </li>  
     </ul>
@@ -174,7 +114,7 @@ window.Quarto = {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -197,13 +137,13 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">myblog</h1>
+    <div class="quarto-title column-body">
+      <h1 class="title">Spotify Audio Feature Analysis:</h1>
                       </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta">
 
       
     
@@ -211,124 +151,56 @@ window.Quarto = {
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="analysis">analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="code">code <span class="quarto-category-count">(1)</span></div><div class="category" data-category="music">music <span class="quarto-category-count">(1)</span></div><div class="category" data-category="news">news <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
+<p>### A Comparative Analysis of Top 2000s, Global Top 5, and Notable Artists ## INTRODUCTION</p>
+<p><strong>Research Motivation:</strong></p>
+<p>This analysis provides an exciting opportunity to delve into the evolution of popular music and identify the characteristics that contribute to a song’s success. This analysis offers a compelling opportunity to examine the evolution of musical characteristics and their relationship with popularity over several decades. The insights derived from this analysis will not only enhance our understanding of the trajectory of popular music but also provide valuable context for anticipating future trends in the music landscape.</p>
+<p><strong>Research Questions:</strong></p>
+<p>This research seeks to address several critical questions:</p>
+<p>What characteristics are common among the most popular songs?</p>
+<p>How have trends in music shifted over time?</p>
+<p>Are there specific artists or genres that consistently produce top hits?</p>
+<p>To what extent can popularity be predicted based on these characteristics?</p>
+<p><strong>Data Overview:</strong></p>
+<p>The analysis draws upon two distinct datasets that offer a comprehensive view of both historical and contemporary music trends.</p>
+<p>The primary dataset, <a href="https://www.kaggle.com/datasets/iamsumat/spotify-top-2000s-mega-dataset/data">Spotify - All Time Top 2000s Mega Dataset</a>, comprises the top 2000 tracks on Spotify, spanning releases from 1956 to 2019. This dataset features tracks from iconic artists such as Queen, The Beatles, and Guns N’ Roses, and includes a rich array of audio features that provide a deep dive into the characteristics that have defined popular music over the last 60 years.</p>
+<p>To complement the historical analysis, a secondary dataset was extracted using the Spotify API, capturing audio features for the top 50 songs currently trending globally on Spotify. This real-time dataset offers a snapshot of contemporary musical preferences, serving as a critical point of comparison to assess how current trends align or diverge from those observed in previous decades.</p>
+<p><strong>Feature Descriptions</strong></p>
+<p>Both datasets encompass a set of key features essential for this analysis:</p>
+<p>Artist: The performer of the track.</p>
+<p>Top Genre: The genre classification of the track.</p>
+<p>Year: The release year of the track.</p>
+<p>Beats per Minute (BPM): The tempo of the song.</p>
+<p>Energy: A measure of the track’s intensity and activity.</p>
+<p>Danceability: Indicates the suitability of the song for dancing.</p>
+<p>Loudness: The volume level of the track.</p>
+<p>Valence: Reflects the positivity of the song’s mood.</p>
+<p>Length: The duration of the track.</p>
+<p>Acousticness: The degree to which the song is acoustic.</p>
+<p>Speechiness: The amount of spoken word content in the song.</p>
+<p>Popularity: A measure of the song’s popularity on Spotify.</p>
+<section id="analysis" class="level1">
+<h1>ANALYSIS</h1>
+<p>Feature Insights:</p>
+<p><strong>Tempo and Energy:</strong> Despite shifts in musical genres, tempo has remained a consistent feature in popular music. Our analysis shows that tempo, coupled with energy, often dictates a track’s ability to engage listeners.</p>
+<p><strong>Valence and Danceability:</strong> These features correlate with the emotional and physical engagement of listeners, often higher in songs that achieve widespread popularity. Comparative Analysis:</p>
+<p><strong>Historical vs.&nbsp;Contemporary:</strong> By comparing datasets from the 2000s to 2024, we noticed subtle shifts in the average energy and danceability, suggesting a trend towards more vibrant and rhythmic music.</p>
+<p><strong>Artist Impact:</strong> Artists like Taylor Swift and Coldplay have demonstrated versatility in adapting their musical styles to maintain relevance across different musical eras.</p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1722661338024" data-listing-reading-time-sort="3" data-listing-word-count-sort="484">
-<div class="thumbnail">
-<p><a href="./posts/Project.html" class="no-external"></a></p><a href="./posts/Project.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/Project.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/Project.html" class="no-external">Spotify Audio Feature Analysis:</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/Project.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/Project.html" class="no-external">### A Comparative Analysis of Top 2000s, Global Top 5, and Notable Artists ## INTRODUCTION</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./posts/Project.html" class="no-external"></a></p><a href="./posts/Project.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="music,code,analysis" data-listing-date-sort="1722556800000" data-listing-file-modified-sort="1722660686332" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="thumbnail">
-<p><a href="./posts/post-with-code/index.html" class="no-external"></a></p><a href="./posts/post-with-code/index.html" class="no-external">
-<p><img loading="lazy" src="./posts/post-with-code/Spotify_logo_with_text.svg.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/post-with-code/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/post-with-code/index.html" class="no-external">Introduction:</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/post-with-code/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('music'); return false;">
-music
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/post-with-code/index.html" class="no-external"></a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/post-with-code/index.html" class="no-external">
-<div class="listing-date">
-Aug 2, 2024
-</div>
-<div class="listing-author">
-Malintzin Blanco
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="news" data-listing-date-sort="1722038400000" data-listing-file-modified-sort="1722324234258" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="32">
-<div class="thumbnail">
-<p><a href="./posts/welcome/index.html" class="no-external"></a></p><a href="./posts/welcome/index.html" class="no-external">
-<p class="card-img-top"><img src="posts/welcome/thumbnail.jpg"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/welcome/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/welcome/index.html" class="no-external">Welcome To My Blog</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/welcome/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('news'); return false;">
-news
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/welcome/index.html" class="no-external">This is the first post in a Quarto blog. Welcome!</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/welcome/index.html" class="no-external">
-<div class="listing-date">
-Jul 27, 2024
-</div>
-<div class="listing-author">
-Tristan O’Malley
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
