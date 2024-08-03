@@ -6,9 +6,9 @@ site:
   navbar:
     left:
       - text: "Posts with Code"
-        href: postswithcode/index.qmd
+        href: post-with-code/index.qmd
       - text: "Project"
-        href: posts/project.ipynb
+        href: posts/Project.ipynb
       - text: "Welcome"
         menu:
           - text: "TEMPO"
