@@ -179,10 +179,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<p>Our previous analysis revealed that the mean tempos from the 2000s and 2024 datasets are 120.22 BPM and 123.91 BPM, respectively. This slight increase does not significantly alter the perception of tempo, suggesting a general stability in the beats per minute that define popular tracks across nearly two and a half decades.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 6%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>## title: A Closer View: Artists &amp; Tempo ##### date: 2024-30-07</td>
+</tr>
+</tbody>
+</table>
+<p>Previous analysis revealed that the mean tempos from the 2000s and 2024 datasets are 120.22 BPM and 123.91 BPM, respectively. This slight increase does not significantly alter the perception of tempo, suggesting a general stability in the beats per minute that define popular tracks across nearly two and a half decades.</p>
 <hr>
 <p>Utilizing the Spotify API, further analysis was conducted on the audio features of top tracks from iconic artists such as Taylor Swift and Coldplay. Focusing on artists who span these periods, such as Coldplay and Taylor Swift, we see a consistency in their use of tempo. Coldplay’s music, known for its anthemic quality, has maintained a steady tempo close to the average of popular music from the early 2000s, echoing a traditional rock influence. Similarly, Taylor Swift, despite her genre crossovers, has shown remarkable consistency in the tempo of her hits, with only marginal variations to adapt to modern pop and electronic influences.</p>
-<div id="a196f2e6" class="cell" data-execution_count="12">
+<div id="3422490a" class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> spotipy</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> spotipy.oauth2 <span class="im">import</span> SpotifyClientCredentials</span>
@@ -243,7 +253,7 @@ Valence: 0.39
 Tempo: 125.19</code></pre>
 </div>
 </div>
-<div id="6df56a8e" class="cell" data-execution_count="16">
+<div id="d33a305a" class="cell" data-execution_count="16">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
@@ -258,7 +268,7 @@ Tempo: 125.19</code></pre>
 <span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate average tempo for the Global Top 50 dataset</span></span>
 <span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>average_tempo_top50 <span class="op">=</span> top50_df[<span class="st">'tempo'</span>].mean()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="2e805cb7" class="cell" data-execution_count="17">
+<div id="2111bd25" class="cell" data-execution_count="17">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Combine the average tempo values into a DataFrame</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>tempo_comparison_df <span class="op">=</span> pd.DataFrame({</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Taylor Swift'</span>: [average_tempo_taylor],</span>
@@ -286,7 +296,7 @@ Tempo: 125.19</code></pre>
 </div>
 </div>
 </div>
-<div id="176afb1f" class="cell" data-execution_count="19">
+<div id="44b698e6" class="cell" data-execution_count="19">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Function to get audio features for multiple tracks</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_audio_features(track_ids):</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    features <span class="op">=</span> sp.audio_features(track_ids)</span>
@@ -306,7 +316,7 @@ Tempo: 125.19</code></pre>
 <pre><code>Average Tempo for Coldplay's Top 50 Tracks: 125.19 BPM</code></pre>
 </div>
 </div>
-<div id="86d27741" class="cell" data-execution_count="20">
+<div id="4325046f" class="cell" data-execution_count="20">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the 2000s and Top 50 datasets</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>spotify_df_2000 <span class="op">=</span> pd.read_csv(<span class="st">'Spotify-2000.csv'</span>)</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>top50_df <span class="op">=</span> pd.read_csv(<span class="st">'Spotify_Global_Top50_Audio_Features.csv'</span>)</span>
@@ -332,7 +342,7 @@ Tempo: 125.19</code></pre>
 2  Global Top 50           123.912180</code></pre>
 </div>
 </div>
-<div id="31384fa9" class="cell" data-execution_count="21">
+<div id="2ea33b9c" class="cell" data-execution_count="21">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the average tempos</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>sns.barplot(x<span class="op">=</span><span class="st">'Dataset'</span>, y<span class="op">=</span><span class="st">'Average Tempo (BPM)'</span>, data<span class="op">=</span>tempo_comparison_df)</span>
