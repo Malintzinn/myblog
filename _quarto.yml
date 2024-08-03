@@ -5,8 +5,6 @@ site:
   title: "My Blog"
   navbar:
     left:
-      - text: "Posts with Code"
-        href: post-with-code/index.qmd
       - text: "Project"
         href: posts/Project.ipynb
       - text: "Welcome"
