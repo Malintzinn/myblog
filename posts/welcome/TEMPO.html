@@ -203,7 +203,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </figure>
 </div>
 <p>While it’s often highlighted how musical styles evolve over time, certain elements like tempo show remarkable consistency, especially in popular music. Despite the evolution of genres and production techniques, the tempo of popular music has maintained a certain uniformity across different eras. Below, we explore such consistencies in contemporary music.</p>
-<div id="184e4a16" class="cell" data-execution_count="3">
+<div id="184e4a16" class="cell" data-execution_count="19">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the dataset</span></span>
@@ -233,7 +233,7 @@ tempo           105.339333
 dtype: float64</code></pre>
 </div>
 </div>
-<div id="8223c653" class="cell" data-execution_count="8">
+<div id="8223c653" class="cell" data-execution_count="20">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>spotify_df_global <span class="op">=</span> pd.read_csv(<span class="st">'Spotify_Global_Top50_Audio_Features.csv'</span>)</span>
@@ -249,7 +249,7 @@ dtype: float64</code></pre>
 31          78         0.464   0.745    0.262  180.098</code></pre>
 </div>
 </div>
-<div id="3d8eb0f1" class="cell" data-execution_count="10">
+<div id="3d8eb0f1" class="cell" data-execution_count="21">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>spotify_df_2000 <span class="op">=</span> pd.read_csv(<span class="st">'Spotify-2000.csv'</span>)</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>spotify_df_median <span class="op">=</span> spotify_df_2000[[<span class="st">'Danceability'</span>, <span class="st">'Energy'</span>, <span class="st">'Valence'</span>, <span class="st">'Beats Per Minute (BPM)'</span>]].median()</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(spotify_df_median)</span>
@@ -269,7 +269,7 @@ tempo           120.026
 dtype: float64</code></pre>
 </div>
 </div>
-<div id="77c7a373" class="cell" data-execution_count="11">
+<div id="77c7a373" class="cell" data-execution_count="22">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the datasets</span></span>
@@ -306,7 +306,7 @@ Valence                      47.0                56.900
 Tempo                       119.0               120.026</code></pre>
 </div>
 </div>
-<div id="2049207b" class="cell" data-execution_count="12">
+<div id="f1a2b578" class="cell" data-execution_count="23">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -339,7 +339,7 @@ Tempo                       119.0               120.026</code></pre>
 </div>
 </div>
 </div>
-<div id="4a69de51" class="cell" data-execution_count="13">
+<div id="cad3cf8f" class="cell" data-execution_count="24">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>spotify_df_2000 <span class="op">=</span> pd.read_csv(<span class="st">'Spotify-2000.csv'</span>)</span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>spotify_df_global <span class="op">=</span> pd.read_csv(<span class="st">'Spotify_Global_Top50_Audio_Features.csv'</span>)</span>
@@ -400,7 +400,7 @@ Tempo                120.215647           123.91218</code></pre>
 </div>
 <p>The bar charts highlight differences in median and mean scores for Danceability, Energy, Valence, and Tempo.</p>
 <p>This bar chart vividly illustrates the tempo variations among these top tracks, which do not vary widely, suggesting a consistency in tempo among the most popular songs globally.</p>
-<div id="81d17fe2" class="cell" data-execution_count="14">
+<div id="6db12570" class="cell" data-execution_count="25">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>top50_df <span class="op">=</span> pd.read_csv(<span class="st">'Spotify_Global_Top50_Audio_Features.csv'</span>)</span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Extract the top 10 songs based on popularity</span></span>
@@ -426,7 +426,7 @@ Tempo                120.215647           123.91218</code></pre>
 </div>
 </div>
 <p>These two figures were created after extracting the top 5 songs from both datasets. Despite the variability present for the larger dataset, it is imperative to observe that trends point to higher BPMs being prioritized across datasets.</p>
-<div id="4938e5a9" class="cell" data-execution_count="15">
+<div id="2a51cffd" class="cell" data-execution_count="26">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
@@ -457,7 +457,7 @@ Tempo                120.215647           123.91218</code></pre>
 </div>
 </div>
 </div>
-<div id="e71d836b" class="cell" data-execution_count="16">
+<div id="8da61e6b" class="cell" data-execution_count="27">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
@@ -484,7 +484,7 @@ Tempo                120.215647           123.91218</code></pre>
 </div>
 </div>
 </div>
-<div id="f25c5d0f" class="cell" data-execution_count="17">
+<div id="4d629935" class="cell" data-execution_count="28">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Histogram to visualize the distribution of BPM</span></span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>sns.histplot(top50_df[<span class="st">'tempo'</span>], bins<span class="op">=</span><span class="dv">30</span>, kde<span class="op">=</span><span class="va">True</span>)</span>
