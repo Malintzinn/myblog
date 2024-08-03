@@ -199,7 +199,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://logowik.com/content/uploads/images/spotify-black1673.jpg" class="img-fluid figure-img"></p>
-<figcaption>Alt Text</figcaption>
+<figcaption>Logowik</figcaption>
 </figure>
 </div>
 <p>While it’s often highlighted how musical styles evolve over time, certain elements like tempo show remarkable consistency, especially in popular music. Despite the evolution of genres and production techniques, the tempo of popular music has maintained a certain uniformity across different eras. Below, we explore such consistencies in contemporary music.</p>
@@ -306,7 +306,7 @@ Valence                      47.0                56.900
 Tempo                       119.0               120.026</code></pre>
 </div>
 </div>
-<div id="f1a2b578" class="cell" data-execution_count="23">
+<div id="61635bac" class="cell" data-execution_count="23">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -339,7 +339,7 @@ Tempo                       119.0               120.026</code></pre>
 </div>
 </div>
 </div>
-<div id="cad3cf8f" class="cell" data-execution_count="24">
+<div id="5230f9cd" class="cell" data-execution_count="24">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>spotify_df_2000 <span class="op">=</span> pd.read_csv(<span class="st">'Spotify-2000.csv'</span>)</span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>spotify_df_global <span class="op">=</span> pd.read_csv(<span class="st">'Spotify_Global_Top50_Audio_Features.csv'</span>)</span>
@@ -400,7 +400,7 @@ Tempo                120.215647           123.91218</code></pre>
 </div>
 <p>The bar charts highlight differences in median and mean scores for Danceability, Energy, Valence, and Tempo.</p>
 <p>This bar chart vividly illustrates the tempo variations among these top tracks, which do not vary widely, suggesting a consistency in tempo among the most popular songs globally.</p>
-<div id="6db12570" class="cell" data-execution_count="25">
+<div id="5509afec" class="cell" data-execution_count="25">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>top50_df <span class="op">=</span> pd.read_csv(<span class="st">'Spotify_Global_Top50_Audio_Features.csv'</span>)</span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Extract the top 10 songs based on popularity</span></span>
@@ -426,7 +426,7 @@ Tempo                120.215647           123.91218</code></pre>
 </div>
 </div>
 <p>These two figures were created after extracting the top 5 songs from both datasets. Despite the variability present for the larger dataset, it is imperative to observe that trends point to higher BPMs being prioritized across datasets.</p>
-<div id="2a51cffd" class="cell" data-execution_count="26">
+<div id="61e1795b" class="cell" data-execution_count="26">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
@@ -457,7 +457,7 @@ Tempo                120.215647           123.91218</code></pre>
 </div>
 </div>
 </div>
-<div id="8da61e6b" class="cell" data-execution_count="27">
+<div id="f63dc1a8" class="cell" data-execution_count="27">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
@@ -484,7 +484,7 @@ Tempo                120.215647           123.91218</code></pre>
 </div>
 </div>
 </div>
-<div id="4d629935" class="cell" data-execution_count="28">
+<div id="6f0064ac" class="cell" data-execution_count="28">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Histogram to visualize the distribution of BPM</span></span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>sns.histplot(top50_df[<span class="st">'tempo'</span>], bins<span class="op">=</span><span class="dv">30</span>, kde<span class="op">=</span><span class="va">True</span>)</span>
